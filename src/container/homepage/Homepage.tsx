@@ -1,10 +1,13 @@
-import Header from "components/header/Header";
+import { Block } from "components/styled";
+import TrendingMovies from "container/homepage/components/trending-movies/TrendingMovies";
 
 function Homepage() {
   return (
-    <div>
-      <Header />
-    </div>
+    <Block>
+      <Block>
+        <TrendingMovies />
+      </Block>
+    </Block>
   )
 }
 

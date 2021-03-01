@@ -1,8 +1,10 @@
+import { Block } from "components/styled/div/Div";
+
 function Header() {
   return (
-    <div>
-      <div className="aw">awdaw</div>
-    </div>
+    <Block>
+      <Block>awdaw</Block>
+    </Block>
   );
 }
 
