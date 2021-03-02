@@ -3,14 +3,14 @@ import { ServerStyleSheet } from 'styled-components';
 
 // Document only rendered on Server side
 export default class CustomDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: any) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
+          enhanceApp: (App: any) => (props: JSX.IntrinsicAttributes) =>
             sheet.collectStyles(<App {...props} />),
         })
 

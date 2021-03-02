@@ -8,7 +8,7 @@ function Homepage() {
         <TrendingMovies />
       </Block>
     </Block>
-  )
+  );
 }
 
 export default Homepage;
