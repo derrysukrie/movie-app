@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image'
-
 // Molecul Comp
 import MoviesSlider from 'shared/movies-slider/MoviesSlider';
 
@@ -66,7 +64,7 @@ function TrendingMovies() {
           {React.Children.toArray(
             images.map((res) => (
               <div>
-                <Image
+                <img
                   src={res.image}
                   width="120"
                   alt="image poster, gambar"
