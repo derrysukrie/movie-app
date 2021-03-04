@@ -1,11 +1,13 @@
 @import 'src/styles/app.scss';
 
+$base-color: #c6538c;
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Rubik', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
   font-size: 14px;
   max-width: 414px;
   font-weight: 400;
