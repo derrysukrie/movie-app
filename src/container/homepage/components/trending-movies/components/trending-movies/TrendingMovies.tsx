@@ -3,7 +3,7 @@ import React from 'react';
 import MoviesSlider from 'shared/movies-slider/MoviesSlider';
 
 // Atomic Comp
-import { TextLarge, TextRegular } from 'components/styled';
+import { TextRegular } from 'components/styled';
 import { Block } from 'components/styled/div/Div';
 import { Flex } from 'components/styled/layout/Flex';
 
@@ -49,13 +49,10 @@ const images = [
 function TrendingMovies() {
   return (
     <Block>
-      <Block p="20">
+      <Block pr="20" pl="20" pt="30" pb="10">
         <Flex between center>
           <Block>
-            <TextLarge bold>Popular Movies</TextLarge>
-          </Block>
-          <Block>
-            <TextRegular>View all daw</TextRegular>
+            <TextRegular bold>Popular Movies</TextRegular>
           </Block>
         </Flex>
       </Block>
@@ -66,12 +63,11 @@ function TrendingMovies() {
               <div>
                 <img
                   src={res.image}
-                  width="120"
+                  width="300"
                   alt="image poster, gambar"
-                  height="180"
-                  // style={{ objectFit: 'cover', borderRadius: '4px' }}
+                  height="160"
+                  style={{ objectFit: 'cover', borderRadius: '10px' }}
                 />
-                <div>awdaw</div>
               </div>
             ))
           )}

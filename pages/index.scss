@@ -1,21 +1,21 @@
 @import 'src/styles/app.scss';
 
-$base-color: #c6538c;
+$base-color: #FF5733;
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif !important;
-  font-size: 14px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 12px;
   max-width: 414px;
   font-weight: 400;
-  background: #fff;
+  background: #FFF;
+  color: rgb(19, 19, 19);
   margin: 0 auto !important;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   min-height: 100%;
-
 }
 
 html {
