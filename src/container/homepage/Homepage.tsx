@@ -1,7 +1,7 @@
-import Header from "components/header/Header";
 import { Block } from "components/styled";
-import TrendingMovies from "container/homepage/components/trending-movies/components/trending-movies/TrendingMovies";
-import TrendingCategories from "./components/trending-movies/components/trending-categories/Trendingcategories";
+import ShowingNow from "./components/showing-now/ShowingNow";
+import TrendingCategories from "./components/trending-categories/TrendingCategories";
+import TVShows from "./components/tv-shows/TVshows";
 
 function Homepage() {
   return (
@@ -9,8 +9,9 @@ function Homepage() {
       {/* <Block>
         <Header />
       </Block> */}
-      <TrendingMovies />
+      <ShowingNow />
       <TrendingCategories />
+      <TVShows />
     </Block>
   );
 }
