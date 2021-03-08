@@ -10,11 +10,11 @@ const ScrollWrapper = styled.div`
   padding: 0px 20px 20px;
   padding-right: 0;
   margin: 0 auto;
-`
+`;
 
 const Empty = styled.div`
   width: 5px;
-`
+`;
 
 export {
   ScrollWrapper,

@@ -1,20 +1,21 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html, Head, Main, NextScript,
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 // Document only rendered on Server side
 export default class CustomDocument extends Document {
   static async getInitialProps(ctx: any) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App: any) => (props: JSX.IntrinsicAttributes) =>
-            sheet.collectStyles(<App {...props} />),
-        })
+      ctx.renderPage = () => originalRenderPage({
+        // eslint-disable-next-line no-undef
+        enhanceApp: (App: any) => (props: JSX.IntrinsicAttributes) => sheet.collectStyles(<App {...props} />),
+      });
 
-      const initialProps = await Document.getInitialProps(ctx)
+      const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: (
@@ -23,9 +24,9 @@ export default class CustomDocument extends Document {
             {sheet.getStyleElement()}
           </>
         ),
-      }
+      };
     } finally {
-      sheet.seal()
+      sheet.seal();
     }
   }
 
@@ -44,7 +45,7 @@ export default class CustomDocument extends Document {
             content="HTML, CSS, JavaScript, React, NextJS, Redux"
           />
           <meta name="author" content="Derry Sukrie" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" /> 
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         </Head>
         <body>

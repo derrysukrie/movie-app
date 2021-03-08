@@ -1,14 +1,11 @@
-import { Block } from "components/styled";
-import ShowingNow from "./components/showing-now/ShowingNow";
-import TrendingCategories from "./components/trending-categories/TrendingCategories";
-import TVShows from "./components/tv-shows/TVshows";
+import { Block } from 'components/styled';
+import ShowingNow from './components/showing-now/ShowingNow';
+import TrendingCategories from './components/trending-categories/TrendingCategories';
+import TVShows from './components/tv-shows/TVshows';
 
 function Homepage() {
   return (
     <Block>
-      {/* <Block>
-        <Header />
-      </Block> */}
       <ShowingNow />
       <TrendingCategories />
       <TVShows />

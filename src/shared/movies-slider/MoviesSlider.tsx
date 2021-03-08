@@ -1,4 +1,5 @@
-import { ScrollWrapper, Empty } from "components/styled";
+import React from 'react';
+import { ScrollWrapper, Empty } from 'components/styled';
 
 type Props = { children: React.ReactNode };
 

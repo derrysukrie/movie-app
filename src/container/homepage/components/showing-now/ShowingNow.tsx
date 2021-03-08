@@ -69,7 +69,7 @@ function ShowingNow() {
                 <img
                   src={res.image}
                   width="300"
-                  alt="image poster, gambar"
+                  alt="poster, gambar"
                   height="160"
                   style={{
                     objectFit: 'cover',
@@ -82,7 +82,7 @@ function ShowingNow() {
                   </TextRegular>
                 </Block>
               </div>
-            ))
+            )),
           )}
         </MoviesSlider>
       </Block>
