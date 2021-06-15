@@ -8,4 +8,4 @@ const Block = styled.div<{ p?: string; pt?: string; pb?: string; pl?: string; pr
   padding-right: ${(props) => props.pr && props.pr};
 `;
 
-export { Block };
+export default Block;

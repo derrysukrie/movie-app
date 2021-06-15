@@ -8,5 +8,5 @@ export {
   TextRegular,
   TextSmall,
   ScrollWrapper,
-  Empty
-}
+  Empty,
+};
