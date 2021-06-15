@@ -1,8 +1,6 @@
-import { ColorTypes } from 'shared/theme';
 import styled from 'styled-components';
 
 const StyledText = styled.div<{
-  color?: ColorTypes;
   customColor?: string;
   size?: number;
   decoration?: string;
