@@ -1,14 +1,11 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import MarginType, { marginTypePropsHelper } from 'shared/styles/types/margin.type';
-import PaddingType, { paddingTypePropsHelper } from 'shared/styles/types/padding.type';
-import theme, { ColorTypes } from 'shared/theme';
-import { ThemeProvider } from 'styled-components';
+import MarginType, { marginTypePropsHelper } from 'styles/style/types/margin.type';
+import PaddingType, { paddingTypePropsHelper } from 'styles/style/types/padding.type';
 import { StyledHeading } from './heading.styled';
 
 type Props = {
   children: React.ReactNode;
-  color?: ColorTypes;
   customColor?: string;
   size?: number;
   underline?: boolean;
@@ -20,21 +17,18 @@ type Props = {
 } & PaddingType & MarginType;
 
 const Heading = (props: Props) => (
-  <ThemeProvider theme={theme}>
-    <StyledHeading
-      size={props.size}
-      color={props.color}
-      customColor={props.customColor}
-      underline={props.underline}
-      weight={props.weight}
-      block={props.block}
-      align={props.align}
-      {...paddingTypePropsHelper(props)}
-      {...marginTypePropsHelper(props)}
-    >
-      {props.children}
-    </StyledHeading>
-  </ThemeProvider>
+  <StyledHeading
+    size={props.size}
+    customColor={props.customColor}
+    underline={props.underline}
+    weight={props.weight}
+    block={props.block}
+    align={props.align}
+    {...paddingTypePropsHelper(props)}
+    {...marginTypePropsHelper(props)}
+  >
+    {props.children}
+  </StyledHeading>
 );
 
 export default Heading;
