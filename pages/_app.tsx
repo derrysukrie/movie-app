@@ -1,5 +1,6 @@
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps /* , AppContext */ } from 'next/app';
 import Head from 'next/head';
+// import { QueryClient, QueryClientProvider } from 'react-query';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 

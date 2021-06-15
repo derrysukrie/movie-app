@@ -12,6 +12,7 @@
     "next": "10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-query": "^3.17.0",
     "sass": "^1.32.8",
     "styled-components": "^5.2.1"
   },
