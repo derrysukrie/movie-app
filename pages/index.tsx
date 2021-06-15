@@ -1,4 +1,4 @@
-import Homepage from 'container';
+import Homepage from 'container/homepage/homepage';
 
 // export async function getServerSideProps() {
 //   // Call an external API endpoint to get posts.
