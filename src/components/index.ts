@@ -1,7 +1,7 @@
 import { Heading, Text } from './typhography';
 import Block from './block';
 
-export default {
+export {
   Heading,
   Text,
   Block,

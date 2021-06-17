@@ -4,6 +4,8 @@
 //   const res = await fetch('https://jsonplaceholder.typicode.com/todos/')
 //   const lists = await res.json()
 
+import { Block } from 'components';
+
 //   if (!lists) {
 //     return {
 //       notFound: true,
@@ -26,6 +28,6 @@
 
 export default function Home() {
   return (
-    <div>awdaw</div>
+    <Block>awdaw</Block>
   );
 }
