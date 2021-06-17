@@ -1,3 +1,9 @@
+@import '../scss/variable';
+
+body {
+  color: $color-black;
+}
+
 @media (min-width: 601px) {
 
   body {
