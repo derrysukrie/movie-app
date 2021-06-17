@@ -4,7 +4,7 @@
 //   const res = await fetch('https://jsonplaceholder.typicode.com/todos/')
 //   const lists = await res.json()
 
-import { Block } from 'components';
+import { Homepage } from 'containers';
 
 //   if (!lists) {
 //     return {
@@ -28,6 +28,6 @@ import { Block } from 'components';
 
 export default function Home() {
   return (
-    <Block>awdaw</Block>
+    <Homepage />
   );
 }
