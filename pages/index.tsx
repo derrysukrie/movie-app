@@ -1,5 +1,3 @@
-import { Homepage } from "container";
-
 // export async function getServerSideProps() {
 //   // Call an external API endpoint to get posts.
 //   // You can use any data fetching library
@@ -28,7 +26,6 @@ import { Homepage } from "container";
 
 export default function Home() {
   return (
-    <Homepage />
+    <div>awdaw</div>
   );
 }
- 
