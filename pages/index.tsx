@@ -6,7 +6,7 @@
 
 import Image from 'next/image';
 import Block from 'components/block';
-import Heading from '../src/components/typhography/heading';
+import { Heading } from 'components/typhography';
 
 //   if (!lists) {
 //     return {
