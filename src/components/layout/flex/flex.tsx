@@ -24,7 +24,7 @@ const FlexStyled = styled.div<{
 
 export type FlexProps = {
   children?: ReactNode;
-  justify?: 'space-between' | 'space-around' | 'center' | 'start';
+  justify?: 'space-between' | 'space-around' | 'center' | 'flex-start' | 'flex-end';
   align?: 'center' | 'stretch' | 'start';
   direction?: 'column' | 'column-reverse' | 'row' | 'row-reverse';
   flexWrap?: 'nowrap' | 'wrap' | 'wrap-reverse';

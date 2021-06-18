@@ -12,6 +12,7 @@ const StyledHeading = styled.div<{
   align?: string;
   marginBottom?: string;
   marginTop?: string;
+  cursor?: string;
 } & PaddingType & MarginType>`
   color: ${(props) => (props.customColor ? `${props.customColor}` : props.theme.colors[props.color ?? '']?.background)};
   font-size: ${(props) => (props.size ? `${props.size}px` : '12px')};
@@ -20,6 +21,7 @@ const StyledHeading = styled.div<{
   text-decoration: ${(props) => (props.underline ? 'underline' : '')};
   font-family: 'Montserrat', sans-serif;
   text-align: ${(props) => (props.align ? props.align : null)};
+  cursor: ${(props) => (props.cursor ? props.cursor : 'default')};
   ${MarginTypeStyledHelper}
   ${PaddingTypeStyledHelper}
 `;

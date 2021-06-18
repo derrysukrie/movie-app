@@ -4,9 +4,14 @@
 //   const res = await fetch('https://jsonplaceholder.typicode.com/todos/')
 //   const lists = await res.json()
 
-import Image from 'next/image';
-import Block from 'components/block';
-import { Heading } from 'components/typhography';
+import {
+  Block,
+  Heading,
+  ImageLoader,
+  Flex,
+  Text,
+  Button,
+} from 'components';
 
 //   if (!lists) {
 //     return {
@@ -30,21 +35,41 @@ import { Heading } from 'components/typhography';
 
 export default function Home() {
   return (
-    <Block p="16px">
+    <Block p="32px 24px">
       <Block pb="2rem">
-        <Image
-          src="/icon/icon-search.png"
-          placeholder="blur"
-          width="20px"
-          height="20px"
-        />
+        <Flex justify="space-between">
+          <Button background="transparent" border="none">
+            <ImageLoader
+              src="/icon/icon-menu.png"
+              width="20px"
+              height="20px"
+              placeholder="blur"
+              alt="search icon"
+            />
+          </Button>
+          <Button background="transparent" border="none">
+            <ImageLoader
+              src="/icon/icon-search.png"
+              width="20px"
+              height="20px"
+              placeholder="blur"
+              alt="search icon"
+            />
+          </Button>
+        </Flex>
       </Block>
       <Block pb="2rem">
-        <Heading customColor="#1C1C1D" size={28} weight="700">
+        <Heading customColor="#1c1c1d" size={28} weight="700">
           Search My
           <br />
-          Favorite Movie's
+          Favorite Movie&apos;s
         </Heading>
+      </Block>
+      <Block>
+        <Flex justify="space-between" align="center">
+          <Heading customColor="#1c1c1d" size={18} weight="700">Popular Movies</Heading>
+          <Text size={14} weight="700" customColor="#3A57AE" link>See All</Text>
+        </Flex>
       </Block>
     </Block>
   );

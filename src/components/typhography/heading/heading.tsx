@@ -14,6 +14,7 @@ type Props = {
   block?: boolean;
   marginBottom?: string;
   marginTop?: string;
+  cursor?: string;
 } & PaddingType & MarginType;
 
 const Heading = (props: Props) => (
@@ -24,6 +25,7 @@ const Heading = (props: Props) => (
     weight={props.weight}
     block={props.block}
     align={props.align}
+    cursor={props.cursor}
     {...paddingTypePropsHelper(props)}
     {...marginTypePropsHelper(props)}
   >

@@ -11,7 +11,8 @@ const StyledText = styled.div<{
   marginTop?: string;
   marginLeft?: string;
   cursor?: string;
-  fontStyle? :string;
+  fontStyle?: string;
+  link?: boolean;
 }>`
   color: ${(props) => (props.customColor ? `${props.customColor}` : props.theme.colors[props.color ?? '']?.background)};
   font-size: ${(props) => (props.size ? `${props.size}px` : '12px')};
@@ -24,7 +25,20 @@ const StyledText = styled.div<{
   margin-top: ${(props) => (props.marginTop ? props.marginTop : null)};
   margin-left: ${(props) => (props.marginLeft ? props.marginLeft : 'unset;')};
   font-style: ${(props) => (props.fontStyle ? props.fontStyle : null)};
-  cursor: ${(props) => (props.cursor && props.cursor)};
+  cursor: ${(props) => {
+    if (props.link) {
+      return 'pointer';
+    }
+    if (props.cursor) {
+      return `${props.cursor}`;
+    }
+    return 'default';
+  }};
+  ${(props) => (props.link ? (
+    `&:hover { 
+      transition: .3s;
+      color: #8F9ED0;
+    }`) : null)}
 `;
 
 export { StyledText };

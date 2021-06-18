@@ -17,6 +17,7 @@ type Props = {
   fontStyle?: 'italic';
   onClick?: () => any;
   className?: string;
+  link?: boolean;
 };
 
 const Text = (props: Props) => (
@@ -34,6 +35,7 @@ const Text = (props: Props) => (
     cursor={props.cursor}
     onClick={props.onClick}
     className={props.className}
+    link={props.link}
   >
     {props.children}
   </StyledText>
