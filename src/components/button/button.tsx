@@ -7,7 +7,7 @@ type Props = {
   background?: string;
   color?: string;
   weight?: '500' | '600' | '700' | '800';
-  radius?: number;
+  radius?: string;
   border?: string;
   margin?: string;
   padding?: string;
